@@ -611,8 +611,8 @@ a.signin-btn{text-align:center;}
 .hc-dot.is-active{background:var(--primary);width:26px;border-radius:6px;}
 @media(max-width:600px){.jp-planrow{flex-direction:column;align-items:stretch;}#mfSelect{width:100%;}.jp-cta{justify-content:center;}}
 /* ===== carousel as a faint background behind the light hero (text/layout kept) ===== */
-.hero{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:172px 20px 96px !important;position:relative;overflow:hidden;}
+.hero{min-height:96vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  padding:150px 20px 74px !important;position:relative;overflow:hidden;}
 .hero-carousel{position:absolute;inset:0;margin:0;max-width:none;width:100%;height:100%;border:0;border-radius:0;
   box-shadow:none;aspect-ratio:auto;z-index:0;opacity:1;}
 .hero-carousel::after{content:"";position:absolute;inset:0;pointer-events:none;
@@ -621,7 +621,8 @@ a.signin-btn{text-align:center;}
 .hero::before{display:none !important;}
 .hero .hero-inner{position:relative;z-index:2;}
 .jp-h1{text-shadow:0 2px 18px rgba(255,255,255,.85),0 1px 3px rgba(255,255,255,.9);}
-.jp-sub{text-shadow:0 1px 10px rgba(255,255,255,.9);}
+.jp-sub{color:var(--secondary) !important;text-shadow:0 1px 12px rgba(255,255,255,.95);}
+.jp-trust{color:var(--secondary) !important;}
 .jp-badges .jp-pill{box-shadow:0 10px 26px -12px rgba(15,23,42,.4);}
 
 </style>

@@ -1494,24 +1494,14 @@ if (form) {
       formMsg.style.color = 'var(--rose-600)';
       return;
     }
-    var travelDate = document.getElementById('travel-date').value;
-    var sessions = document.getElementById('sessions').value;
-    var message = document.getElementById('message').value.trim();
-
-    // Build a WhatsApp / mailto style summary
-    var summary = 'New Holiday Dialysis Request (' + (window.MF_CITY || '') + ')%0A%0A' +
-      'Name: ' + encodeURIComponent(name) + '%0A' +
-      'Phone: ' + encodeURIComponent(phone) + '%0A' +
-      'Travel Date: ' + encodeURIComponent(travelDate || 'Not specified') + '%0A' +
-      'Sessions: ' + encodeURIComponent(sessions || 'Not specified') + '%0A' +
-      'Message: ' + encodeURIComponent(message || 'Not specified');
-
-    formMsg.textContent = 'Thank you! Your request has been submitted. Our team will contact you shortly.';
+    // Redirect the visitor to the main DialysisOnGo website to complete their
+    // booking there. No personal data is placed in the URL.
+    formMsg.textContent = 'Taking you to DialysisOnGo to complete your booking…';
     formMsg.style.color = 'var(--primary)';
-    form.reset();
-
-    // Open WhatsApp with prefilled message (optional convenience)
-    // window.open('https://wa.me/918750004177?text=' + summary, '_blank');
+    var mainSite = 'https://dialysisongo.com/en';
+    var submitBtn = form.querySelector('.submit-btn');
+    if (submitBtn) { submitBtn.disabled = true; }
+    setTimeout(function () { window.location.href = mainSite; }, 700);
   });
 }
 

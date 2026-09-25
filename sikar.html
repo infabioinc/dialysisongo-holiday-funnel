@@ -16,7 +16,7 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&display=swap">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalBusiness", "name": "DialysisOnGo — Holiday Dialysis in Sikar", "description": "Travelling to Sikar? DialysisOnGo helps you book holiday dialysis at verified sterile centres near the Khatu Shyam Ji Temple in Rajasthan — zero platform fee and nephrologist continuity. Plan your Sikar dialysis trip.", "url": "https://city.dialysisongo.com/sikar", "telephone": "+918750004177", "email": "info@dialysisongo.com", "areaServed": {"@type": "City", "name": "Sikar"}, "medicalSpecialty": "Nephrologic", "parentOrganization": {"@type": "Organization", "name": "DialysisOnGo", "legalName": "Pashupati Nephrology Care Pvt. Ltd."}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is holiday dialysis available in Sikar ?", "acceptedAnswer": {"@type": "Answer", "text": "DialysisOnGo helps patients request holiday dialysis in Sikar . Availability depends on the destination dialysis centre and the patient's medical requirements."}}, {"@type": "Question", "name": "Can dialysis patients travel to Sikar ?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many dialysis patients travel safely for pilgrimage, family visits, and tourism after consulting their nephrologist and arranging dialysis in advance."}}, {"@type": "Question", "name": "Can I book dialysis online?", "acceptedAnswer": {"@type": "Answer", "text": "You can submit your dialysis request online through DialysisOnGo. Final confirmation depends on acceptance by the treating dialysis centre."}}, {"@type": "Question", "name": "Is my dialysis appointment confirmed after submitting the request?", "acceptedAnswer": {"@type": "Answer", "text": "No. Submitting your request begins the coordination process. Your appointment is confirmed only after the destination dialysis centre provides confirmation."}}, {"@type": "Question", "name": "Can a family member submit the request?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Family members and caregivers may submit requests on behalf of the patient with appropriate consent."}}, {"@type": "Question", "name": "What documents are generally required?", "acceptedAnswer": {"@type": "Answer", "text": "Most dialysis centres may request: Dialysis prescription Recent dialysis records Blood reports Medication list Medical history Dialysis access details"}}, {"@type": "Question", "name": "How early should I arrange dialysis before travelling?", "acceptedAnswer": {"@type": "Answer", "text": "Patients are encouraged to begin planning as early as possible, especially during festivals, long weekends, and peak pilgrimage seasons when appointment availability may be limited."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is holiday dialysis available in Sikar ?", "acceptedAnswer": {"@type": "Answer", "text": "DialysisOnGo helps patients request holiday dialysis in Sikar . Availability depends on the destination dialysis centre and the patient's medical requirements."}}, {"@type": "Question", "name": "Can dialysis patients travel to Sikar ?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Many dialysis patients travel safely for pilgrimage, family visits, and tourism after consulting their nephrologist and arranging dialysis in advance."}}, {"@type": "Question", "name": "Can I book dialysis online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can start your holiday-dialysis request online through DialysisOnGo, and our team helps coordinate with the destination centre. Your session is confirmed only once the treating dialysis centre accepts the booking."}}, {"@type": "Question", "name": "Is my dialysis appointment confirmed after submitting the request?", "acceptedAnswer": {"@type": "Answer", "text": "No. Sending a request only begins the coordination process. Your appointment is confirmed only after the destination dialysis centre reviews it and provides confirmation."}}, {"@type": "Question", "name": "Can a family member submit the request?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Family members and caregivers may submit requests on behalf of the patient with appropriate consent."}}, {"@type": "Question", "name": "What documents are generally required?", "acceptedAnswer": {"@type": "Answer", "text": "Most dialysis centres may request: Dialysis prescription Recent dialysis records Blood reports Medication list Medical history Dialysis access details"}}, {"@type": "Question", "name": "How early should I arrange dialysis before travelling?", "acceptedAnswer": {"@type": "Answer", "text": "Patients are encouraged to begin planning as early as possible, especially during festivals, long weekends, and peak pilgrimage seasons when appointment availability may be limited."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "DialysisOnGo", "item": "https://city.dialysisongo.com/"}, {"@type": "ListItem", "position": 2, "name": "Holiday Dialysis in Sikar", "item": "https://city.dialysisongo.com/sikar"}]}</script>
 <style>
 :root{
@@ -652,10 +652,48 @@ a.signin-btn{text-align:center;}
 .foot-cities a{font-size:13.5px;color:#64748b;text-decoration:none;}
 .foot-cities a:hover{color:var(--primary);}
 
+.jp-combo{position:relative;min-width:260px;}
+.jp-comboinput{width:100%;box-sizing:border-box;font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--secondary);
+  background:#fff;border:1px solid var(--rose-200);border-radius:14px;padding:15px 44px 15px 18px;outline:none;box-shadow:0 10px 30px -18px rgba(225,36,84,.35);}
+.jp-comboinput::placeholder{color:#94a3b8;font-weight:500;}
+.jp-comboinput:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(225,36,84,.14);}
+.jp-combo::after{content:"\1F50D";position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:15px;opacity:.5;pointer-events:none;}
+.jp-combolist{list-style:none;margin:8px 0 0;padding:6px;position:absolute;z-index:40;left:0;right:0;top:100%;
+  background:#fff;border:1px solid var(--rose-200);border-radius:14px;box-shadow:0 24px 60px -20px rgba(15,23,42,.4);
+  max-height:320px;overflow:auto;display:none;text-align:left;}
+.jp-combolist.open{display:block;}
+.jp-combolist li{padding:10px 12px;border-radius:10px;cursor:pointer;font-size:15px;color:var(--secondary);display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.jp-combolist li small{color:#94a3b8;font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;}
+.jp-combolist li:hover,.jp-combolist li.active{background:var(--rose-50);}
+.jp-combolist li.active{outline:2px solid var(--rose-100);}
+.jp-combolist .jp-nomatch{color:#94a3b8;cursor:default;justify-content:flex-start;}
+.jp-combolist .jp-nomatch:hover{background:none;}
+@media(max-width:600px){.jp-combo{min-width:0;width:100%;}}
+
+/* ---- finder section rendered as a checklist ---- */
+.finder-sec .kw-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:920px;margin:0 auto;}
+.finder-sec .kw-wrap .guide-item{background:#fff;border:1px solid var(--rose-100);border-radius:14px;padding:16px 18px;
+  display:flex;align-items:center;gap:12px;font-weight:600;color:var(--secondary);box-shadow:0 10px 26px -20px rgba(15,23,42,.25);}
+.finder-sec .kw-wrap .guide-item .chk{flex:none;width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;font-size:13px;}
+@media(max-width:640px){.finder-sec .kw-wrap{grid-template-columns:1fr;}}
+
+/* ---- interactive (tickable) travel-guide checklist ---- */
+#guide .guide-item.tickable{cursor:pointer;user-select:none;transition:border-color .15s,background .15s,box-shadow .15s;}
+#guide .guide-item.tickable:hover{border-color:var(--rose-200);}
+#guide .guide-item.tickable:focus-visible{outline:2px solid var(--primary);outline-offset:2px;}
+#guide .guide-item .tickbox{flex:none;width:24px;height:24px;border:2px solid var(--rose-200);border-radius:7px;background:#fff;
+  display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:900;transition:all .15s;}
+#guide .guide-item.is-checked{background:var(--rose-50);border-color:var(--primary);}
+#guide .guide-item.is-checked .tickbox{background:var(--primary);border-color:var(--primary);}
+#guide .guide-item.is-checked .tickbox::after{content:"\2713";}
+#guide .guide-item.is-checked span.gtext{text-decoration:line-through;color:#94a3b8;}
+.guide-progress{max-width:920px;margin:0 auto 18px;font-weight:700;color:var(--primary);text-align:center;font-size:14px;}
+
 </style>
 </head>
 <body>
-<script>window.MF_CITY="Sikar";</script>
+<script>window.MF_CITY="Sikar";window.CITY_INDEX=[["ajmer", "Ajmer", "Pilgrimage"], ["alwar", "Alwar", "Tourist"], ["amritsar", "Amritsar", "Pilgrimage"], ["aurangabad", "Aurangabad", "Pilgrimage"], ["bahadurgarh", "Bahadurgarh", "Tier 3"], ["balangir", "Balangir", "Tier 3"], ["bareilly", "Bareilly", "Tier 2"], ["begusarai", "Begusarai", "Tier 3"], ["bhagalpur", "Bhagalpur", "Tier 3"], ["bhatinda", "Bhatinda", "Tier 3"], ["bhopal", "Bhopal", "Tier 2"], ["bhubaneswar", "Bhubaneswar", "Pilgrimage"], ["bikaner", "Bikaner", "Tourist"], ["bilaspur", "Bilaspur", "Tier 2"], ["bokaro", "Bokaro", "Tier 3"], ["chandigarh", "Chandigarh", "Tier 2"], ["chennai", "Chennai", "Metro"], ["daltanganj", "Daltanganj", "Tier 3"], ["delhi", "Delhi", "Metro"], ["dhanbad", "Dhanbad", "Tier 3"], ["dumka", "Dumka", "Tier 3"], ["durg-bhilai", "Durg-Bhilai", "Tier 3"], ["faridabad", "Faridabad", "Tier 2"], ["gurugram", "Gurugram", "Metro"], ["guwahati", "Guwahati", "Pilgrimage"], ["gwalior", "Gwalior", "Tourist"], ["haridwar", "Haridwar", "Pilgrimage"], ["hazaribagh", "Hazaribagh", "Tier 3"], ["indore", "Indore", "Tier 2"], ["jaipur", "Jaipur", "Tourist"], ["jalandhar", "Jalandhar", "Tier 2"], ["jamshedpur", "Jamshedpur", "Tier 3"], ["kashipur", "Kashipur", "Tier 3"], ["kathua", "Kathua", "Tier 3"], ["katra", "Katra", "Pilgrimage"], ["kharsia", "Kharsia", "Tier 3"], ["kolhapur", "Kolhapur", "Pilgrimage"], ["kunkuri", "Kunkuri", "Tier 3"], ["lucknow", "Lucknow", "Tier 2"], ["madurai", "Madurai", "Pilgrimage"], ["mahasamund", "Mahasamund", "Tier 3"], ["maihar", "Maihar", "Pilgrimage"], ["manendragarh", "Manendragarh", "Tier 3"], ["mumbai", "Mumbai", "Metro"], ["muzaffarpur", "Muzaffarpur", "Tier 3"], ["nashik", "Nashik", "Pilgrimage"], ["nawada", "Nawada", "Tier 3"], ["patna", "Patna", "Tier 2"], ["raipur", "Raipur", "Tier 2"], ["rajnandgaon", "Rajnandgaon", "Tier 3"], ["ranchi", "Ranchi", "Tier 2"], ["rewari", "Rewari", "Tier 3"], ["rishikesh", "Rishikesh", "Pilgrimage"], ["rudrapur", "Rudrapur", "Tier 3"], ["shahjahanpur", "Shahjahanpur", "Tier 3"], ["sikar", "Sikar", "Pilgrimage"], ["simdega", "Simdega", "Tier 3"], ["sivasagar", "Sivasagar", "Pilgrimage"], ["sonipat", "Sonipat", "Tier 2"], ["srinagar", "Srinagar", "Tourist"], ["surat", "Surat", "Tier 2"], ["tirupati", "Tirupati", "Pilgrimage"], ["udaipur", "Udaipur", "Tourist"], ["ujjain", "Ujjain", "Pilgrimage"], ["varanasi", "Varanasi", "Pilgrimage"], ["veraval", "Veraval", "Pilgrimage"], ["vidisha", "Vidisha", "Pilgrimage"]];</script>
 
 <!-- ===== PRELOADER ===== -->
 <div class="pre-splash hide" id="pre-splash">
@@ -725,8 +763,11 @@ a.signin-btn{text-align:center;}
 <span class="jp-pill jp-net">✈️ India's Dedicated Dialysis Travel Network</span>
 </div><h1 class="jp-h1">Where are you <span class="jp-grad">travelling</span> next?</h1><p class="jp-sub">Plan dialysis around your itinerary — verified sterile centres near your hotel or shrine, zero platform fee, and instant nephrologist continuity.</p><div class="jp-planrow">
 <div class="jp-select">
-<label for="mfSelect">Destination</label>
-<div class="jp-selwrap"><select aria-label="Choose your destination city" id="mfSelect" onchange="location.href='/'+this.value"><optgroup label="Pilgrimage &amp; religious"><option value="ajmer">Ajmer</option><option value="amritsar">Amritsar</option><option value="aurangabad">Aurangabad</option><option value="bhubaneswar">Bhubaneswar</option><option value="guwahati">Guwahati</option><option value="haridwar">Haridwar</option><option value="katra">Katra</option><option value="kolhapur">Kolhapur</option><option value="madurai">Madurai</option><option value="maihar">Maihar</option><option value="nashik">Nashik</option><option value="rishikesh">Rishikesh</option><option selected="" value="sikar">Sikar</option><option value="sivasagar">Sivasagar</option><option value="tirupati">Tirupati</option><option value="ujjain">Ujjain</option><option value="varanasi">Varanasi</option><option value="veraval">Veraval</option><option value="vidisha">Vidisha</option></optgroup><optgroup label="Tourist destinations"><option value="alwar">Alwar</option><option value="bikaner">Bikaner</option><option value="gwalior">Gwalior</option><option value="jaipur">Jaipur</option><option value="srinagar">Srinagar</option><option value="udaipur">Udaipur</option></optgroup><optgroup label="Metro cities"><option value="chennai">Chennai</option><option value="delhi">Delhi</option><option value="gurugram">Gurugram</option><option value="mumbai">Mumbai</option></optgroup><optgroup label="Tier 2 cities"><option value="bareilly">Bareilly</option><option value="bhopal">Bhopal</option><option value="bilaspur">Bilaspur</option><option value="chandigarh">Chandigarh</option><option value="faridabad">Faridabad</option><option value="indore">Indore</option><option value="jalandhar">Jalandhar</option><option value="lucknow">Lucknow</option><option value="patna">Patna</option><option value="raipur">Raipur</option><option value="ranchi">Ranchi</option><option value="sonipat">Sonipat</option><option value="surat">Surat</option></optgroup><optgroup label="Tier 3 cities"><option value="bahadurgarh">Bahadurgarh</option><option value="balangir">Balangir</option><option value="begusarai">Begusarai</option><option value="bhagalpur">Bhagalpur</option><option value="bhatinda">Bhatinda</option><option value="bokaro">Bokaro</option><option value="daltanganj">Daltanganj</option><option value="dhanbad">Dhanbad</option><option value="dumka">Dumka</option><option value="durg-bhilai">Durg-Bhilai</option><option value="hazaribagh">Hazaribagh</option><option value="jamshedpur">Jamshedpur</option><option value="kashipur">Kashipur</option><option value="kathua">Kathua</option><option value="kharsia">Kharsia</option><option value="kunkuri">Kunkuri</option><option value="mahasamund">Mahasamund</option><option value="manendragarh">Manendragarh</option><option value="muzaffarpur">Muzaffarpur</option><option value="nawada">Nawada</option><option value="rajnandgaon">Rajnandgaon</option><option value="rewari">Rewari</option><option value="rudrapur">Rudrapur</option><option value="shahjahanpur">Shahjahanpur</option><option value="simdega">Simdega</option></optgroup></select></div>
+<label for="mfSearchInput">Destination</label>
+<div class="jp-combo" id="mfCombo">
+<input aria-autocomplete="list" aria-controls="mfSearchList" aria-expanded="false" aria-label="Search your destination city" autocomplete="off" class="jp-comboinput" id="mfSearchInput" placeholder="Type your city…" role="combobox" type="text"/>
+<ul aria-label="Cities" class="jp-combolist" id="mfSearchList" role="listbox"></ul>
+</div>
 </div>
 <a class="jp-cta" href="https://dialysisongo.com/en">Plan My Journey <span aria-hidden="true">→</span></a>
 </div><div class="jp-trust"><span class="jp-stars">★★★★★</span> Trusted by <strong>2,400+ renal travelers</strong> across India</div><a class="jp-explore" href="#holiday-dialysis">EXPLORE PLANNER<span class="jp-chev">⌄</span></a></div>
@@ -1098,7 +1139,7 @@ a.signin-btn{text-align:center;}
 <h2>Dialysis Centre Finder for <span class="primary"><span class="mfCityName">Sikar</span></span></h2>
 <p>Finding a dialysis centre in an unfamiliar city can be challenging. DialysisOnGo helps patients searching for:</p>
 </div>
-<div class="kw-wrap reveal" id="mfKw"><span class="kw-tag">Dialysis centre in Sikar</span><span class="kw-tag">Holiday dialysis in Sikar</span><span class="kw-tag">Dialysis near the Khatu Shyam Ji Temple</span><span class="kw-tag">Dialysis near Khatushyamji</span><span class="kw-tag">Dialysis centres in Rajasthan</span><span class="kw-tag">Dialysis support during travel</span><span class="kw-tag">Dialysis centres in India</span></div>
+<div class="kw-wrap reveal" id="mfKw"><div class="guide-item"><span class="chk">✔</span>Dialysis centre in Sikar</div><div class="guide-item"><span class="chk">✔</span>Holiday dialysis in Sikar</div><div class="guide-item"><span class="chk">✔</span>Dialysis near the Khatu Shyam Ji Temple</div><div class="guide-item"><span class="chk">✔</span>Dialysis near Khatushyamji</div><div class="guide-item"><span class="chk">✔</span>Dialysis centres in Rajasthan</div><div class="guide-item"><span class="chk">✔</span>Dialysis support during travel</div><div class="guide-item"><span class="chk">✔</span>Dialysis centres in India</div></div>
 <p class="dest-note reveal">Our goal is to help kidney patients travel with confidence while staying connected to reliable dialysis care.</p>
 </div>
 </section>
@@ -1110,17 +1151,17 @@ a.signin-btn{text-align:center;}
 <h2>Kidney Patient Travel Guide for <span class="primary"><span class="mfCityName">Sikar</span></span></h2>
 <p>Before leaving for <span class="mfCityName">Sikar</span>, make sure you have:</p>
 </div>
-<div class="guide-grid reveal">
-<div class="guide-item"><span class="chk">✔</span>Approval from your nephrologist</div>
-<div class="guide-item"><span class="chk">✔</span>Dialysis prescription</div>
-<div class="guide-item"><span class="chk">✔</span>Recent dialysis treatment records</div>
-<div class="guide-item"><span class="chk">✔</span>Blood test reports</div>
-<div class="guide-item"><span class="chk">✔</span>Current medications</div>
-<div class="guide-item"><span class="chk">✔</span>Emergency contact numbers</div>
-<div class="guide-item"><span class="chk">✔</span>Confirmed dialysis appointment</div>
-<div class="guide-item"><span class="chk">✔</span>Identity proof</div>
-<div class="guide-item"><span class="chk">✔</span>Accommodation details</div>
-<div class="guide-item"><span class="chk">✔</span>Medicines for the entire journey</div>
+<div class="guide-progress">0 of 10 ready</div><div class="guide-grid reveal">
+<div aria-checked="false" class="guide-item tickable" data-k="g0" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Approval from your nephrologist</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g1" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Dialysis prescription</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g2" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Recent dialysis treatment records</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g3" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Blood test reports</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g4" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Current medications</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g5" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Emergency contact numbers</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g6" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Confirmed dialysis appointment</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g7" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Identity proof</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g8" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Accommodation details</span></div>
+<div aria-checked="false" class="guide-item tickable" data-k="g9" role="checkbox" tabindex="0"><span class="tickbox"></span><span class="gtext">Medicines for the entire journey</span></div>
 </div>
 <p class="dest-note reveal">Keeping both printed and digital copies of your medical records is always recommended.</p>
 </div>
@@ -1228,14 +1269,14 @@ a.signin-btn{text-align:center;}
 <span>Can I book dialysis online?</span>
 <span class="faq-icon"><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span>
 </button>
-<div class="faq-a"><p>You can submit your dialysis request online through DialysisOnGo. Final confirmation depends on acceptance by the treating dialysis centre.</p></div>
+<div class="faq-a"><p>Yes. You can start your holiday-dialysis request online through DialysisOnGo, and our team helps coordinate with the destination centre. Your session is confirmed only once the treating dialysis centre accepts the booking.</p></div>
 </div>
 <div class="faq-item">
 <button aria-expanded="false" class="faq-q">
 <span>Is my dialysis appointment confirmed after submitting the request?</span>
 <span class="faq-icon"><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span>
 </button>
-<div class="faq-a"><p>No. Submitting your request begins the coordination process. Your appointment is confirmed only after the destination dialysis centre provides confirmation.</p></div>
+<div class="faq-a"><p>No. Sending a request only begins the coordination process. Your appointment is confirmed only after the destination dialysis centre reviews it and provides confirmation.</p></div>
 </div>
 <div class="faq-item">
 <button aria-expanded="false" class="faq-q">
@@ -1500,5 +1541,52 @@ if (supportBtn && supportPopup) {
 </script>
 <script>
 (function(){var slides=[].slice.call(document.querySelectorAll('.hc-slide')),dots=[].slice.call(document.querySelectorAll('.hc-dot'));if(!slides.length)return;var i=0,t;function go(n){i=(n+slides.length)%slides.length;slides.forEach(function(s,k){s.classList.toggle('is-active',k===i);});dots.forEach(function(d,k){d.classList.toggle('is-active',k===i);});}function nx(){go(i+1);}function start(){t=setInterval(nx,4500);}function stop(){clearInterval(t);}dots.forEach(function(d){d.addEventListener('click',function(){go(+d.dataset.i);stop();start();});});var w=document.querySelector('.hero-carousel');if(w){w.addEventListener('mouseenter',stop);w.addEventListener('mouseleave',start);}start();})();
+</script>
+<script>
+(function(){
+  // ===== searchable city selector =====
+  var input=document.getElementById('mfSearchInput'), list=document.getElementById('mfSearchList');
+  var IDX=window.CITY_INDEX||[]; var active=-1, shown=[];
+  if(input&&list){
+    if(window.MF_CITY){input.setAttribute('placeholder', window.MF_CITY+' \u2014 type to change');}
+    function render(term){
+      term=(term||'').trim().toLowerCase();
+      shown=IDX.filter(function(c){return !term || c[1].toLowerCase().indexOf(term)>-1;});
+      if(!shown.length){list.innerHTML='<li class="jp-nomatch">No matching city</li>';active=-1;return;}
+      list.innerHTML=shown.map(function(c,i){return '<li role="option" data-slug="'+c[0]+'" data-i="'+i+'">'+c[1]+' <small>'+c[2]+'</small></li>';}).join('');
+      active=-1;
+    }
+    function open(){render(input.value);list.classList.add('open');input.setAttribute('aria-expanded','true');}
+    function close(){list.classList.remove('open');input.setAttribute('aria-expanded','false');active=-1;}
+    function go(slug){if(slug){window.location.href='/'+slug;}}
+    function setActive(n){var items=list.querySelectorAll('li[data-slug]');if(!items.length)return;active=(n+items.length)%items.length;items.forEach(function(el,i){el.classList.toggle('active',i===active);});items[active].scrollIntoView({block:'nearest'});}
+    input.addEventListener('focus',open);
+    input.addEventListener('input',function(){render(input.value);list.classList.add('open');});
+    input.addEventListener('keydown',function(e){
+      if(e.key==='ArrowDown'){e.preventDefault();setActive(active+1);}
+      else if(e.key==='ArrowUp'){e.preventDefault();setActive(active-1);}
+      else if(e.key==='Enter'){e.preventDefault();var items=list.querySelectorAll('li[data-slug]');if(active>-1&&items[active]){go(items[active].getAttribute('data-slug'));}else if(shown.length===1){go(shown[0][0]);}}
+      else if(e.key==='Escape'){close();input.blur();}
+    });
+    list.addEventListener('mousedown',function(e){var li=e.target.closest('li[data-slug]');if(li){e.preventDefault();go(li.getAttribute('data-slug'));}});
+    document.addEventListener('click',function(e){if(!document.getElementById('mfCombo').contains(e.target)){close();}});
+  }
+  // ===== tickable travel-guide checklist =====
+  var items=[].slice.call(document.querySelectorAll('#guide .guide-item.tickable'));
+  var prog=document.querySelector('.guide-progress');
+  if(items.length){
+    var KEY='dog-guide-'+(window.MF_CITY||'city');
+    var saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){}
+    function upd(){var done=items.filter(function(x){return x.classList.contains('is-checked');}).length;if(prog){prog.textContent=done+' of '+items.length+' ready';}}
+    items.forEach(function(it,i){
+      var id=it.getAttribute('data-k')||('i'+i);
+      if(saved[id]){it.classList.add('is-checked');it.setAttribute('aria-checked','true');}
+      function toggle(){it.classList.toggle('is-checked');var on=it.classList.contains('is-checked');it.setAttribute('aria-checked',on?'true':'false');saved[id]=on?1:0;try{localStorage.setItem(KEY,JSON.stringify(saved));}catch(e){}upd();}
+      it.addEventListener('click',toggle);
+      it.addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'){e.preventDefault();toggle();}});
+    });
+    upd();
+  }
+})();
 </script>
 </body></html>

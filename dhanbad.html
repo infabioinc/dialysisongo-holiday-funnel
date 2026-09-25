@@ -1553,7 +1553,7 @@ if (supportBtn && supportPopup) {
       term=(term||'').trim().toLowerCase();
       shown=IDX.filter(function(c){return !term || c[1].toLowerCase().indexOf(term)>-1;});
       if(!shown.length){list.innerHTML='<li class="jp-nomatch">No matching city</li>';active=-1;return;}
-      list.innerHTML=shown.map(function(c,i){return '<li role="option" data-slug="'+c[0]+'" data-i="'+i+'">'+c[1]+' <small>'+c[2]+'</small></li>';}).join('');
+      list.innerHTML=shown.map(function(c,i){return '<li role="option" data-slug="'+c[0]+'" data-i="'+i+'">'+c[1]+'</li>';}).join('');
       active=-1;
     }
     function open(){render(input.value);list.classList.add('open');input.setAttribute('aria-expanded','true');}
